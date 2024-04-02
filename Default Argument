@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+int fun(int a, int b, int c = 0){
+    std::cout << (a + b + c) << std::endl;
+}
+
+int main(){
+    int x,y;
+
+    std::cin >> x >> y;
+    fun(x,y);
+}
