@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+int main(){
+    int hello= 12;
+    int *c = &hello;
+
+    std::cout << c << " " << &hello;
+}
