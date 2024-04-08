@@ -1,3 +1,5 @@
+//Mostly strtok is used this whay only whith the while.
+
 #include <iostream>
 #include <string.h>
 
