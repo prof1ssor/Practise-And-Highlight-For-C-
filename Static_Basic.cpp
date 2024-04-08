@@ -1,3 +1,5 @@
+//static members are used because static members help us to keep the a single declaration and there we can use it and can access it anywhere.
+
 #include <iostream>
 
 class Test{
