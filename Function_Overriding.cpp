@@ -1,3 +1,5 @@
+//The function of this is to use only one declration for the use of the both classes.
+
 #include <iostream>
 
 class one{
