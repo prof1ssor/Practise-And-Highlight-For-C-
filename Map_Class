@@ -1,0 +1,21 @@
+#include<iostream>
+#include<map>
+
+int main(){
+    std::map<int,std::string>m;
+    m.insert(std::pair<int,std::string>(1,"John"));
+    m.insert(std::pair<int,std::string>(2,"Harry"));
+    m.insert(std::pair<int,std::string>(3,"Potter"));
+    
+    std::map<int,std::string>::iterator itr;
+    
+    for(itr=m.begin();itr!=m.end();itr++)
+        {
+            std::cout<<itr->first<<" "<<itr->second<<std::endl;
+        }
+        std::map<int,std::string>::iterator itr1;
+            itr1=m.find(2);
+                
+        std::cout<<"Value Found is"<<std::endl;
+        std::cout<<itr1->first<<" "<<itr1->second<<std::endl;
+}
