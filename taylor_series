@@ -1,0 +1,22 @@
+#include <iostream>
+
+double e(int x, int y)
+{
+    static double p = 1, f = 1;
+    double r;
+
+    if(y == 0){
+        return 1;
+    }
+
+    r = e(x, y-1);
+    p = p*x;
+    f = f*y;
+
+    return r+y/f;
+}
+
+int main(){
+    std::cout << e(4,5) << std::endl;
+    return 0;
+}              
